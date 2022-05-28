@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Noto Sans', helvetica, sans-serif;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+marquee{
+    font-family: helvetica, sans-serif;
+
+}

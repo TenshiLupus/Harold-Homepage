@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    vertical-align: baseline;
+}
+
+.section{
+    min-height: 100vh;
+    display: flex;
+    font-size: 100%;
+}
+
+
+/*Helper class too add padding to each section*/
+.section-padding{
+    padding: 0 5vw;
+}
+
+.container{
+    max-width: 810px;
+    margin: auto;
+    font-weight: 800;
+}
+
+.intro{
+    background-image: url(/Images/Kraken-24.jpg);
+    color: #fff;
+}
+
+.intro p{
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+.logo{
+    display: block;
+    text-align: center;
+    margin: 0 auto 32px auto;
+    max-width: 112px;
+
+}
+
+.logo img{
+    width: 100%;
+}
+
+.bg-cover{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    50% {
+        transform: translatey(0);
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+/* support class to make a section fade in slowly*/
+.appear{
+
+    /* Here we set the opacity as a stating point*/
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 2s;
+
+    /*Retains the property values at the end of the animation */
+    animation-fill-mode: forwards;
+}
+
+.marquee{
+    position: absolute;
+    top: 3vh;
+    left: 0;
+    width: 100%;
+    font-size: 5vw;
+    line-height: 1;
+    overflow: hidden;
+    mix-blend-mode: difference;
+    text-align: center;
+}
+
+
+@keyframes moveLeft{
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-3000vw);
+    }
+}
+
+.marquee span{
+    white-space: nowrap;
+    /*Span is in-line by default, so here tell it to be block */ 
+    display:block;
+    position: relative;
+    animation: moveLeft 200s infinite;
+}
+
+
+
+.mix-difference{
+
+}
