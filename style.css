@@ -87,18 +87,17 @@
     font-size: 5vw;
     line-height: 1;
     overflow: hidden;
-    mix-blend-mode: difference;
     text-align: center;
 }
 
 
 @keyframes moveLeft{
     0%{
-        transform: translateX(0);
+        transform: translateX(0vw);
     }
 
     100%{
-        transform: translateX(-3000vw);
+        transform: translateX(-2000vw);
     }
 }
 
@@ -107,11 +106,21 @@
     /*Span is in-line by default, so here tell it to be block */ 
     display:block;
     position: relative;
-    animation: moveLeft 200s infinite;
+    animation: moveLeft 250s infinite;
 }
 
-
-
 .mix-difference{
+    mix-blend-mode: difference;
+}
+
+.service-1{
+    background-image: url(/Images/portfolio+2019-10.jpg);
+}
+
+.service-2{
+
+}
+
+.service-3{
 
 }
