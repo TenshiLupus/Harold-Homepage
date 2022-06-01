@@ -1,11 +1,11 @@
-*{
+* {
     padding: 0;
     margin: 0;
     border: none;
     vertical-align: baseline;
 }
 
-.section{
+.section {
     min-height: 100vh;
     display: flex;
     font-size: 100%;
@@ -13,27 +13,27 @@
 
 
 /*Helper class too add padding to each section*/
-.section-padding{
+.section-padding {
     padding: 0 5vw;
 }
 
-.container{
+.container {
     max-width: 810px;
     margin: auto;
     font-weight: 800;
 }
 
-.intro{
+.intro {
     background-image: url(/Images/Kraken-24.jpg);
     color: #fff;
 }
 
-.intro p{
+.intro p {
     font-size: 36px;
     line-height: 1.2;
 }
 
-.logo{
+.logo {
     display: block;
     text-align: center;
     margin: 0 auto 32px auto;
@@ -41,17 +41,17 @@
 
 }
 
-.logo img{
+.logo img {
     width: 100%;
 }
 
-.bg-cover{
+.bg-cover {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-@keyframes fadeIn{
+@keyframes fadeIn {
     0% {
         opacity: 0;
         transform: translateY(20px);
@@ -61,13 +61,13 @@
         transform: translatey(0);
     }
 
-    100%{
+    100% {
         opacity: 1;
     }
 }
 
 /* support class to make a section fade in slowly*/
-.appear{
+.appear {
 
     /* Here we set the opacity as a stating point*/
     opacity: 0;
@@ -79,7 +79,7 @@
     animation-fill-mode: forwards;
 }
 
-.marquee{
+.marquee {
     position: absolute;
     top: 3vh;
     left: 0;
@@ -91,36 +91,85 @@
 }
 
 
-@keyframes moveLeft{
-    0%{
+@keyframes moveLeft {
+    0% {
         transform: translateX(0vw);
     }
 
-    100%{
+    100% {
         transform: translateX(-2000vw);
     }
 }
 
-.marquee span{
+.marquee span {
     white-space: nowrap;
-    /*Span is in-line by default, so here tell it to be block */ 
-    display:block;
+    /*Span is in-line by default, so here tell it to be block */
+    display: block;
     position: relative;
     animation: moveLeft 250s infinite;
 }
 
-.mix-difference{
+.mix-difference {
     mix-blend-mode: difference;
 }
 
-.service-1{
+.service-1 {
     background-image: url(/Images/portfolio+2019-10.jpg);
 }
 
-.service-2{
-
+.service-2 {
+    background-image: url(/Images/Andres+&+Lesbia-176.jpg);
 }
 
-.service-3{
+.service-3 {
+    background-image: url(/Images/Kraken-13.jpg);
+}
 
+.service {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.date {
+    font-size: 28px;
+    color: #ffEECF;
+    margin-bottom: 48px;
+    line-height: 1;
+}
+
+.lineup h2 {
+    font-size: 56px;
+    line-height: 1;
+    margin-bottom: 6px;
+}
+
+.lineup p {
+    font-size: 21px;
+}
+
+.lineup li {
+    margin-bottom: 24px;
+    list-style: none;
+}
+
+.service {
+    position: relative;
+    z-index: 2;
+}
+
+.scroll-to {
+    position: absolute;
+    left: 50%;
+    bottom: 3vh;
+
+    width: 64px;
+    height: 32px;
+
+    background-image: url(/Images/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    transform: translateX(-50%);  
 }

@@ -5,13 +5,13 @@
 }
 
 body{
-    font-family: 'Noto Sans', helvetica, sans-serif;
+    font-family: helvetica, helvetica, sans-serif;
     line-height: 1.5rem;
     font-weight: 500;
     color: white;
 }
 
-marquee{
+.marquee, .medium-font, .date, .lineup h2, .button{
     font-family: helvetica, sans-serif;
-
+    font-weight: medium;
 }
