@@ -7,11 +7,11 @@
 body{
     font-family: helvetica, helvetica, sans-serif;
     line-height: 1.5rem;
-    font-weight: 500;
-    color: white;
+    font-weight: 400;
+    color: #fff;
 }
 
-.marquee, .medium-font, .date, .lineup h2, .button{
+.marquee, .medium-font, .date, .lineup h2, .button, .register h2, .submit{
     font-family: helvetica, sans-serif;
-    font-weight: medium;
+    font-weight: 650;
 }

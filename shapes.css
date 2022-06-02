@@ -1,11 +1,10 @@
 .shape{
     position:absolute;
-}
-
-.circle{
-
     height: 93px;
     width: 93px;
+}
+
+.circle{ 
     background-color: #FFEECF;
     border-radius:100%;
     opacity: 1;
@@ -13,8 +12,6 @@
 }
 
 .squiggle{
-    height: 93px;
-    width: 93px;
     background-color: #fff;
     opacity: 1;
     border-radius: 20%;
@@ -108,3 +105,10 @@
     right: 0%;
     bottom: 5%;
   }
+
+  @media (max-width: 780px){
+    .shape{
+      height: 60px;
+      width: 60px;
+    }
+}
