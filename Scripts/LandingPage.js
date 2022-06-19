@@ -93,7 +93,9 @@ const smoothScroll = () => {
             /*Prevent default browser behavior, hijacking normal functionality*/
             e.preventDefault()
             const href = link.getAttribute('href');
-            document.querySelector(href).scrollIntoView({
+            let element = document.querySelector(href);
+            
+            element.scrollIntoView({
                 behavior: 'smooth'
             })
         });

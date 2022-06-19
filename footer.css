@@ -23,9 +23,8 @@
 .button {
     border: solid 2px #ffeed1;
     color: #ffeed1;
-    line-height: 1;
     
-    padding: 6px 12px;
+    padding: 12px 12px;
     min-width: 120px;
     text-align: center;
     text-decoration: none;
@@ -53,6 +52,7 @@ input{
     background: none;
     border: none;
     font-size: 21px;
+    font-weight: 300;
     outline: none; 
 }
 
