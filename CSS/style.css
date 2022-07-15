@@ -113,7 +113,7 @@ ul, ol{
 
 .intro{
     height: calc(100vh - 6rem);
-    background-image: url(./Images/Kraken-24.jpg);
+    background-image: url(././Images/Kraken-24.jpg);
     color: #fff;
 }
 
@@ -194,15 +194,15 @@ ul, ol{
 }
 
 .service-1 {
-    background-image: url(./Images/portfolio+2019-10.jpg);
+    background-image: url(././Images/portfolio+2019-10.jpg);
 }
 
 .service-2 {
-    background-image: url(./Images/Andres+&+Lesbia-176.jpg);
+    background-image: url(././Images/Andres+&+Lesbia-176.jpg);
 }
 
 .service-3 {
-    background-image: url(./Images/Kraken-13.jpg);
+    background-image: url(././Images/Kraken-13.jpg);
 }
 
 .service {
@@ -271,7 +271,7 @@ a:focus {
     bottom: 3vh;
     width: 64px;
     height: 32px;
-    background-image: url(./Images/arrow.svg);
+    background-image: url(././Images/arrow.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
