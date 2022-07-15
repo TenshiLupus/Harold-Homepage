@@ -1,5 +1,7 @@
 #photos {
     display: grid;
+    margin-top: 1rem;
+    width: 100%;
     gap: 1rem;
     background-color:beige;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -7,19 +9,19 @@
 }
 
 /*Medium screens*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
 
     .card-tall {
         grid-row: span 2 / auto;
     }
-
+    
     .card-wide {
         grid-column: span 2 / auto;
     }
 }
 
-section div{
+section figure{
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 0% 20%;
 }

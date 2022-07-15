@@ -1,116 +1,185 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="Visual studio code">
   <meta name="robots" content="index">
-  
   <meta name="application-name" content="Personal homepage">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Angel Cardenas Martinez">
   <meta name="description" content="site that describes me">
   <meta name="generator" content="Visual Studio Code">
   <meta name="keywords" content="photography,site,freelance,portraits">
-  
+
   <title>Harold Cardenas Photography</title>
 
 
   <!--CSS files -->
-  <link rel="stylesheet" href="/fonts.css">
-  <link rel="stylesheet" href="/shapes.css">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="stylesheet" href="/viewport.css">
-  <link rel="stylesheet" href="/carousel.css">
-  <link rel="stylesheet" href="/footer.css">
-  
+  <link rel="stylesheet" href="/CSS/fonts.css">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/viewport.css">
+  <link rel="stylesheet" href="/CSS/footer.css">
+
   <!--Scripts-->
   <script defer src="https://unpkg.com/in-view@0.6.1/dist/in-view.min.js"></script>
   <script defer src="Scripts/LandingPage.js"></script>
 
 </head>
 
-<nav>
-
-</nav>
-
 <body>
-  <section class="intro section section-pad bg-cover" id="intro">
-    <div class="container">
-      
-      <a class="logo appear">
-        <img src="/Images/harold-steadycam-.png">
+
+  <header class="header-dimensions content-bar-margin" id="intro">
+    <nav>
+      <ul class="header-links">
+
+        <li><a href="about.html">About</a></li>
+        <li><a href="pricing.html">Pricings</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <aside class="content-bar">
+
+    <ul class="content-bar-list">
+
+      <li class="content-bar-item">
+        <a class="content-bar-link" href="portraits.html">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="8" fill="#111118" />
+            <path
+              d="M10 30L10 20M10 20L10 15C10 12.2386 12.2386 10 15 10L25 10C27.7614 10 30 12.2386 30 15V15C30 17.7614 27.7614 20 25 20L10 20Z"
+              stroke="#FFEED1" stroke-width="3" />
+          </svg>
+          <span class="content-bar-link-text">Portraits</span>
+        </a>
+      </li>
+
+      <li class="content-bar-item">
+        <a class="content-bar-link" href="weddings.html">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="8" fill="#111118" />
+            <path d="M10 10V25C10 27.7614 12.2386 30 15 30H20M30 10V25C30 27.7614 27.7614 30 25 30H20M20 30V10"
+              stroke="#FFEED1" stroke-width="3" />
+          </svg>
+          <span class="content-bar-link-text">Weddings</span>
+        </a>
+      </li>
+
+      <li class="content-bar-item">
+        <a class="content-bar-link" href="events.html">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="8" fill="#111118" />
+            <path
+              d="M30 10L15 10C12.2386 10 10 12.2386 10 15L10 20M30 30L15 30C12.2386 30 10 27.7614 10 25L10 20M10 20L30 20"
+              stroke="#FFEED1" stroke-width="3" />
+          </svg>
+
+          <span class="content-bar-link-text">Events</span>
+        </a>
+      </li>
+
+      <li class="content-bar-item">
+        <a class="content-bar-link" href="home.html">
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="8" fill="#111118" />
+            <path
+              d="M10 20L10 30L30 30L30 20L30 18.0902C30 16.1963 28.93 14.465 27.2361 13.618L20 10L12.7639 13.618C11.07 14.465 10 16.1963 10 18.0902L10 20Z"
+              fill="#00B290" stroke="#FFEED1" stroke-width="3" />
+          </svg>
+
+
+          <span class="content-bar-link-text">Home</span>
+        </a>
+      </li>
+
+    </ul>
+  </aside>
+
+  <main class="content-bar-margin">
+
+    <section class="intro section-padding service bg-cover">
+
+      <nav class="container">
+
+        <article class="logo appear">
+          <figure>
+            <img alt="intro page logo" src="/Images/harold-steadycam-.png">
+
+          </figure>
+        </article>
+
+        <ul class="page-links appear ">
+          <li><a href="portraits.html">Portraits</a></li>
+          <li><a href="weddings.html">Weddings</a></li>
+          <li><a href="Events.html">Events</a></li>
+        </ul>
+
+      </nav>
+
+      <a href="#service-1" class="js-scroll section-scroll"></a>
+    </section>
+
+    <section class="semantic-section section-padding service service-1 bg-cover" id="service-1">
+      <h3 class="title">Portraits</h3>
+      <section class="container">
+        <a href="portraits.html" class="more-button">View more</a>
+      </section>
+      <a href="#service-2" class="js-scroll section-scroll"></a>
+
+    </section>
+
+    <section class="semantic-section section-padding service service-2 bg-cover" id="service-2">
+      <h3 class="title">weddingss</h3>
+      <section class="container">
+        <a href="weddings.html" class="more-button">View more</a>
+      </section>
+
+      <a href="#service-3" class="js-scroll section-scroll"></a>
+    </section>
+
+    <section class="semantic-section section-padding service service-3 bg-cover" id="service-3">
+      <h3 class="title">Events</h3>
+      <section class="container">
+        <a href="events.html" class="more-button">View more</a>
+      </section>
+      <a href="#register" class="js-scroll section-scroll"></a>
+    </section>
+
+    <section class="register section-padding flex-column" id="register">
+      <section class="container center">
+
+        <h2 class="medium-font">
+          Get in contact
+        </h2>
+
+        <form method="post" class="sign-up form">
+          <input placeholder="Enter your email" id="fieldEmail" name="email-i" type="email" required
+            class="email-input">
+          <input type="submit" value="Submit" class="submit">
+        </form>
+
+      </section>
+
+    </section>
+  </main>
+
+  <footer class="content-bar-margin footer section-padding">
+    <section class="container">
+
+      <figure>
+        <img alt="footer page logo" src="Images/harold-steadycam-.png">
+      </figure>
+
+      <a class="js-scroll button" href="#intro">
+        Back to top
       </a>
 
-      <div class="page-links appear ">
-        <a href="portraits.html">Portraits</a>
-        <a href="wedding.html">Wedding</a>
-        <a href="Events.html">Events</a>
-      </div>
+      <p>&copy; Copyright Angel Cardenas Martinez 2022</p>
+    </section>
+  </footer>
 
-      
-
-    </div>
-    <a href="#service-1" class="js-scroll section-scroll"></a>
-  </section>
-
-  <section class="section section-padding service service-1 bg-cover" id="service-1">
-    <div class="container center">
-      <h3 class="date">Portraits</h3>
-    </div>
-    <a href="#service-2" class="js-scroll section-scroll"></a>
-
-  </section>
-
-  <section class="section section-padding service service-2 bg-cover" id="service-2">
-    <div class="container center">
-      <h3 class="date">Weddings</h3>
-
-    </div>
-  
-    <a href="#service-3" class="js-scroll section-scroll"></a>
-
-  </section>
-
-  <section class="section section-padding service service-3 bg-cover" id="service-3">
-    <div class="container center">
-      <h3 class="date">
-        Events
-      </h3>
-      
-    <a href="#register" class="js-scroll section-scroll"></a>
-  </section>
-
-  <section class="section flex-column" id="register">
-    <div class="register section-padding">
-      <div class="container">
-
-        <div class="form">
-          <h2 class="medium-font">
-            Get in contact
-          </h2>
-          <form action="" method="post" class="sign-up">
-            <input placeholder="Enter your email" id="fieldEmail" name="email-i" type="email" required class="email-input">
-            <input type="submit" value="Submit" class="submit">
-          </form>
-        </div>
-
-      </div>
-
-    </div>
-    <footer class="footer section-padding">
-      <div class="container">
-        <img src="Images/harold-steadycam-.png">
-        
-          <a class="js-scroll button" href="#intro">
-            Back to top
-          </a>
-        
-      </div>
-
-    </footer>
-
-  </section>
 </body>
 
 </html>

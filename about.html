@@ -1,28 +1,24 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="Visual studio code">
   <meta name="robots" content="index">
-
   <meta name="application-name" content="Personal homepage">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Angel Cardenas Martinez">
-  <meta name="description" content="site that describes me">
+  <meta name="description" content="About me">
   <meta name="generator" content="Visual Studio Code">
   <meta name="keywords" content="photography,site,freelance,portraits">
 
-  <title>Portraits</title>
-
+  <title>Harold Cardenas Photography</title>
 
   <!--CSS files -->
-
-  <link rel="stylesheet" href="CSS/photos.css">
-  <link rel="stylesheet" href="CSS/portrait-photos.css">
-  <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/fonts.css">
-  <link rel="stylesheet" href="CSS/footer.css">
+  <link rel="stylesheet" href="/CSS/fonts.css">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/viewport.css">
+  <link rel="stylesheet" href="/CSS/footer.css">
 
   <!--Scripts-->
   <script defer src="https://unpkg.com/in-view@0.6.1/dist/in-view.min.js"></script>
@@ -31,6 +27,7 @@
 </head>
 
 <body>
+
   <header class="header-dimensions content-bar-margin" id="intro">
     <nav>
       <ul class="header-links">
@@ -41,6 +38,7 @@
       </ul>
     </nav>
   </header>
+
 
   <aside class="content-bar">
 
@@ -95,54 +93,64 @@
           <span class="content-bar-link-text">Home</span>
         </a>
       </li>
-
+      
     </ul>
   </aside>
 
   <main class="content-bar-margin">
-    <section class="section-padding service" id="photos">
-      <figure class="card-tall" id="i2"></figure>
-      <figure class="card-tall" id="i4"></figure>
-      <figure class="card-tall" id="i5"></figure>
-      <figure class="card-tall" id="i11"></figure>
-      <figure class="card-tall" id="i9"></figure>
-      <figure class="card-tall" id="i15"></figure>
-      <figure class="card-tall" id="i23"></figure>
-      <figure class="card-tall" id="i14"></figure>
-      <figure class="card-tall" id="i13"></figure>
-      <figure class="card-tall" id="i6"></figure>
-      <figure class="card-tall" id="i8"></figure>
-      <figure class="card-tall" id="i19"></figure>
-      <figure class="card-tall" id="i10"></figure>
-      <figure class="card-tall" id="i18"></figure>
-      <figure class="card-tall" id="i17"></figure>
-      <figure class="card-tall" id="i12"></figure>
-      <figure class="card-tall" id="i7"></figure>
-      <figure class="card-tall" id="i16"></figure>
-      <figure class="" id="i20"></figure>
-      <figure class="" id="i21"></figure>
-      <figure class="" id="i22"></figure>
 
+    
+    <section class="semantic-section section-padding" id="about">
+      
+      <figure>
+        <img src="Images/Harold.jpg" alt="Picture of Harold" id="harold-picture">
+        <figcaption>Harold</figcaption>
+      </figure>
+
+      <section>
+        <article>
+          <dl>
+            <dt>Hobbies</dt>
+            <dd>Reading books</dd>
+            <dd>Listening to music</dd>
+          </dl>
+        </article>
+
+        <article>
+          <h2>Aspirations</h2>
+          <ol>
+            <li>
+              <p>Living life to the best of my capacity</p>
+            </li>
+            <li>
+              <p>Becoming a better CNC operator</p>
+            </li>
+            <li>
+              <p>Mastering a craft</p>
+            </li>
+          </ol>
+        </article>
+
+      </section>
+
+
+      <a href="#register" class="js-scroll section-scroll"></a>
     </section>
 
     <section class="register section-padding flex-column" id="register">
-
       <section class="container">
 
-        <figure class="form">
-          <h2 class="medium-font">
-            Get in contact
-          </h2>
-          <form action="" method="post" class="sign-up">
-            <input placeholder="Enter your email" id="fieldEmail" name="email-i" type="email" required
-              class="email-input">
-            <input type="submit" value="Submit" class="submit">
-          </form>
-        </figure>
+        <h2 class="medium-font">Get in contact</h2>
+
+        <form action="" method="post" class="sign-up form">
+          <input placeholder="Enter your email" id="fieldEmail" name="email-i" type="email" required
+            class="email-input">
+          <input type="submit" value="Submit" class="submit">
+        </form>
 
       </section>
-    </section>
 
+    </section>
   </main>
 
   <footer class="content-bar-margin footer section-padding">
@@ -156,7 +164,6 @@
     </section>
   </footer>
 
-  </section>
 </body>
 
 </html>
