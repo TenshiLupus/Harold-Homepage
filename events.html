@@ -1,10 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="Visual studio code">
   <meta name="robots" content="index">
+
   <meta name="application-name" content="Personal homepage">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Angel Cardenas Martinez">
@@ -12,34 +13,39 @@
   <meta name="generator" content="Visual Studio Code">
   <meta name="keywords" content="photography,site,freelance,portraits">
 
-  <title>Harold Cardenas Photography</title>
+  <title>Portraits</title>
 
 
   <!--CSS files -->
-  <link rel="stylesheet" href="./CSS/fonts.css">
+
+  <link rel="stylesheet" href="./CSS/photos.css">
+  <link rel="stylesheet" href="./CSS/event-photos.css">
   <link rel="stylesheet" href="./CSS/style.css">
-  <link rel="stylesheet" href="./CSS/viewport.css">
+  <link rel="stylesheet" href="./CSS/fonts.css">
   <link rel="stylesheet" href="./CSS/footer.css">
 
   <!--Scripts-->
   <script defer src="https://unpkg.com/in-view@0.6.1/dist/in-view.min.js"></script>
-  <script defer src="./Scripts/LandingPage.js"></script>
+  <script defer src="Scripts/LandingPage.js"></script>
 
 </head>
 
 <body>
-
   <header class="header-dimensions content-bar-margin" id="intro">
     <nav>
       <ul class="header-links">
 
-        <li><a href="about.html">About</a></li>
-        <li><a href="pricing.html">Pricings</a></li>
+        <li>
+          <a href="about.html">About</a>
+        </li>
 
+        <li>
+          <a href="pricing.html">Pricing</a>
+        </li>
+        
       </ul>
     </nav>
   </header>
-
   <aside class="content-bar">
 
     <ul class="content-bar-list">
@@ -96,90 +102,55 @@
 
     </ul>
   </aside>
-
+  
   <main class="content-bar-margin">
 
-    <section class="intro section-padding service bg-cover">
+    <section class="section-padding service" id="photos">
 
-      <nav class="container">
+      <figure class="card-tall" id="i1"></figure>
+      <figure class="card-tall" id="i2"></figure>
+      <figure class="card-tall" id="i3"></figure>
+      <figure class="card-tall" id="i4"></figure>
+      <figure class="card-tall" id="i5"></figure>
+      <figure class="card-tall" id="i6"></figure>
+      <figure class="card-tall" id="i7"></figure>
+      <figure class="card-tall" id="i8"></figure>
+      <figure class="card-tall" id="i9"></figure>
 
-        <article class="logo appear">
-          <figure>
-            <img alt="intro page logo" src="./Images/harold-steadycam-.png">
-
-          </figure>
-        </article>
-
-        <ul class="page-links appear ">
-          <li><a href="portraits.html">Portraits</a></li>
-          <li><a href="weddings.html">Weddings</a></li>
-          <li><a href="Events.html">Events</a></li>
-        </ul>
-
-      </nav>
-
-      <a href="#service-1" class="js-scroll section-scroll"></a>
-    </section>
-
-    <section class="semantic-section section-padding service service-1 bg-cover" id="service-1">
-      <h3 class="title">Portraits</h3>
-      <section class="container">
-        <a href="portraits.html" class="more-button">View more</a>
-      </section>
-      <a href="#service-2" class="js-scroll section-scroll"></a>
-
-    </section>
-
-    <section class="semantic-section section-padding service service-2 bg-cover" id="service-2">
-      <h3 class="title">weddingss</h3>
-      <section class="container">
-        <a href="weddings.html" class="more-button">View more</a>
-      </section>
-
-      <a href="#service-3" class="js-scroll section-scroll"></a>
-    </section>
-
-    <section class="semantic-section section-padding service service-3 bg-cover" id="service-3">
-      <h3 class="title">Events</h3>
-      <section class="container">
-        <a href="events.html" class="more-button">View more</a>
-      </section>
-      <a href="#register" class="js-scroll section-scroll"></a>
     </section>
 
     <section class="register section-padding flex-column" id="register">
-      <section class="container center">
 
-        <h2 class="medium-font">
-          Get in contact
-        </h2>
+      <section class="container">
 
-        <form method="post" class="sign-up form">
-          <input placeholder="Enter your email" id="fieldEmail" name="email-i" type="email" required
-            class="email-input">
-          <input type="submit" value="Submit" class="submit">
-        </form>
+        <figure class="form">
+          <h2 class="medium-font">
+            Get in contact
+          </h2>
+          <form action="" method="post" class="sign-up">
+            <input placeholder="Enter your email" id="fieldEmail" name="email-i" type="email" required
+              class="email-input">
+            <input type="submit" value="Submit" class="submit">
+          </form>
+        </figure>
 
       </section>
-
     </section>
+
   </main>
 
   <footer class="content-bar-margin footer section-padding">
     <section class="container">
-
       <figure>
-        <img alt="footer page logo" src="./Images/harold-steadycam-.png">
+        <img src="./Images/harold-steadycam-.png">
       </figure>
-
       <a class="js-scroll button" href="#intro">
         Back to top
       </a>
-
-      <p>&copy; Copyright Angel Cardenas Martinez 2022</p>
     </section>
   </footer>
 
+  </section>
 </body>
 
 </html>
