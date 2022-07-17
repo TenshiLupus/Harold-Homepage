@@ -93,15 +93,15 @@
           <span class="content-bar-link-text">Home</span>
         </a>
       </li>
-      
+
     </ul>
   </aside>
 
   <main class="content-bar-margin">
 
-    
+
     <section class="semantic-section section-padding" id="about">
-      
+
       <figure>
         <img src="Images/Harold.jpg" alt="Picture of Harold" id="harold-picture">
         <figcaption>Harold</figcaption>
@@ -139,13 +139,24 @@
 
     <section class="register section-padding flex-column" id="register">
       <section class="container">
-
         <h2 class="medium-font">Get in contact</h2>
+        <form method="post" enctype="multipart/form-data"
+          action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php">
+          <fieldset class="sign-up form">
+            <!-- Input tag gives the option for the user to write down data for usage, what the content is then used for is up to the user. -->
+            <label for="name-input">Name</label>
+            <input id="name-input" name="first-name" type="text" placeholder="Tom" required>
 
-        <form action="" method="post" class="sign-up form">
-          <input placeholder="Enter your email" id="fieldEmail" name="email-i" type="email" required
-            class="email-input">
-          <input type="submit" value="Submit" class="submit">
+            <label for="last-name-input">Last name</label>
+            <input id="last-name-input" name="last-name" type="text" placeholder="Tompson" required>
+
+            <!-- Since an email is necessary if the user wnat to be contanced. Then it is reasonable to deman an email to reply to-->
+            <label for="email-input">Email</label>
+            <input class="email-input" placeholder="Enter your email" id="fieldEmail" name="email-address" type="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+
+            <input type="submit" value="Submit" class="submit">
+          </fieldset>
         </form>
 
       </section>

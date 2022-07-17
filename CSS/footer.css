@@ -42,15 +42,13 @@
 
 .register h2{
     font-size: 40px;
-    margin-bottom: 48px;
     color: #111118;
     line-height: 1.1;
 }
 
 .sign-up{
     display: flex;
-    border-bottom: solid 2px #00b290;
-    padding-bottom: 12px;
+    flex-direction: column;
 }
 
 input{
@@ -59,6 +57,8 @@ input{
     font-size: 21px;
     font-weight: 300;
     outline: none; 
+    border-bottom: 2px solid #00b290;
+    padding-bottom: 0.3rem;
 }
 
 input:focus{
@@ -73,33 +73,35 @@ input:focus{
     
 }
 
-.form{
-    margin: 48px 24px;
+.submit{
+    border: 3px solid #00b290;
+    padding: 5px 10px;
+    font-weight: 550;
+    font-size: 1.5rem;
+    max-width: 10rem;
+    align-self: center;
+}
+
+
+label{
+    color: #111118;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 @media (max-width: 768px){
     .register .container{
         flex-direction: column;
-        max-width: 320px;
+        width: 80%;
+        margin-top: 0;
     }
 
     .register h2{
+        margin-top: 1rem;
         font-size: 30px;
-    }
-
-    .form{
-        position: relative;
-        margin: 24px 0;
-    }
-
-    .submit{
-        position: absolute;
-        transform: translate(-50%, 200%);
-        left: 50%;
-        border: 3px solid #00b290;
-        padding: 5px 10px;
-        font-weight: 550;
-        font-size: 1.5rem;
+        margin-bottom: 1rem;
     }
 
     .register{

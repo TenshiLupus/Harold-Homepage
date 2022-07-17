@@ -31,12 +31,12 @@
 
     <header class="header-dimensions content-bar-margin" id="intro">
         <nav>
-            <ul class="header-links">
 
+            <ul class="header-links">
                 <li><a href="about.html">About</a></li>
                 <li><a href="pricing.html">Pricings</a></li>
-
             </ul>
+
         </nav>
     </header>
 
@@ -45,6 +45,7 @@
         <ul class="content-bar-list">
 
             <li class="content-bar-item">
+
                 <a class="content-bar-link" href="portraits.html">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect width="40" height="40" rx="8" fill="#111118" />
@@ -54,6 +55,7 @@
                     </svg>
                     <span class="content-bar-link-text">Portraits</span>
                 </a>
+
             </li>
 
             <li class="content-bar-item">
@@ -100,61 +102,73 @@
 
     <main class="content-bar-margin">
         <section class="semantic-section section-padding" id="pricing">
+
             <article>
-                <h2>To improve</h2>
+                <h2>Service pricing</h2>
                 <table>
-                    <caption>Subjects</caption>
+                    <caption>Services</caption>
                     <thead>
 
                         <tr>
-                            <th>Name</th>
-                            <th>Why?</th>
+                            <th>Service</th>
+                            <th>Price</th>
                         </tr>
 
                     </thead>
                     <tbody>
 
                         <tr>
-                            <td>Maya</td>
-                            <td rowspan="2">Produce better optimized 3d models</td>
+                            <td>Portraits</td>
+                            <td rowspan="3">Individually TBD</td>
                         </tr>
+
                         <tr>
-                            <td>Substance Painter</td>
+                            <td>Weddings</td>
+                        </tr>
+
+                        <tr>
+                            <td>Events</td>
                         </tr>
 
                     </tbody>
                     <tfoot>
 
                         <tr>
-                            <td colspan="2">In list</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">2</td>
+                            <td colspan="2">Common service</td>
                         </tr>
 
                     </tfoot>
                 </table>
             </article>
-        </section>
-      
-      
+
             <a href="#register" class="js-scroll section-scroll"></a>
-          </section>
-      
-          <section class="register section-padding flex-column" id="register">
+        </section>
+
+        <section class="register section-padding flex-column" id="register">
+
             <section class="container">
-      
-              <h2 class="medium-font">Get in contact</h2>
-      
-              <form action="" method="post" class="sign-up form">
-                <input placeholder="Enter your email" id="fieldEmail" name="email-i" type="email" required
-                  class="email-input">
-                <input type="submit" value="Submit" class="submit">
-              </form>
-      
+                <h2 class="medium-font">Get in contact</h2>
+                <form method="post" enctype="multipart/form-data"
+                    action="https://people.dsv.su.se/~pierre/i/05_ass/ip3/1/1.10/example.php">
+                    <fieldset class="sign-up form">
+                        <!-- Input tag gives the option for the user to write down data for usage, what the content is then used for is up to the user. -->
+                        <label for="name-input">Name</label>
+                        <input id="name-input" name="first-name" type="text" placeholder="Tom" required>
+
+                        <label for="last-name-input">Last name</label>
+                        <input id="last-name-input" name="last-name" type="text" placeholder="Tompson" required>
+
+                        <!-- Since an email is necessary if the user wnat to be contanced. Then it is reasonable to deman an email to reply to-->
+                        <label for="email-input">Email</label>
+                        <input class="email-input" placeholder="Enter your email" id="fieldEmail" name="email-address"
+                            type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+
+                        <input type="submit" value="Submit" class="submit">
+                    </fieldset>
+                </form>
+
             </section>
-      
-          </section>
+        </section>
     </main>
 
     <footer class="content-bar-margin footer section-padding">

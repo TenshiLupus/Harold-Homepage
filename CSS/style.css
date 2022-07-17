@@ -31,7 +31,8 @@
 }
 
 .header-links li{
-    border: 2px solid #00b290;
+    border: 3px solid #00b290;
+    color: #00b290;
     padding: 0.5rem 1rem;
     min-width: 120px;
     text-align: center;
@@ -108,7 +109,7 @@ ul, ol{
     flex-direction: column;
     justify-content: center;
     max-width: 810px;
-    margin: 5rem auto 5rem auto;
+    margin: 2rem auto 2rem auto;
 }
 
 .intro{
@@ -155,12 +156,10 @@ ul, ol{
 
 /* support class to make a section fade in slowly*/
 .appear {
-    /* Here we set the opacity as a stating point*/
     opacity: 0;
     animation-name: fadeIn;
     animation-duration: 3s;
-    animation-delay: 2s;
-    /*Retains the property values at the end of the animation */
+    animation-delay: 0.7s;
     animation-fill-mode: forwards;
 }
 
@@ -174,7 +173,6 @@ ul, ol{
     overflow: hidden;
 }
 
-
 @keyframes moveLeft {
     0% {
         transform: translateX(0vw);
@@ -187,7 +185,6 @@ ul, ol{
 
 .marquee span {
     white-space: nowrap;
-    /*Span is in-line by default, so here tell it to be block */
     display: block;
     position: relative;
     animation: moveLeft 250s infinite;
@@ -211,7 +208,6 @@ ul, ol{
     overflow: hidden;
 }
 
-
 .title {
     font-size: 5rem;
     position: absolute;
@@ -222,7 +218,6 @@ ul, ol{
     transform: translateX(-50%);
     margin-bottom: 48px;
     line-height: 1;
-
 }
 
 .center {
@@ -246,24 +241,22 @@ ul, ol{
     font-size: 3rem;
 }
 
-a {
+a{
     color: inherit;
     text-decoration: none;
 }
 
-a,
-a:visited,
-a:focus {
+a, a:visited, a:focus {
     text-align: center;
     min-width: 3rem;
 }
 
-.container a {
+.container a{
     min-width: 15rem;
     text-align: center;
 }
 
-.section-scroll {
+.section-scroll{
     position: absolute;
     left: 50%;
     bottom: 3vh;
@@ -303,23 +296,27 @@ dt, #about h2{
 }
 
 #about article{
-    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
+.submit{
+    margin-top: 2rem;
+    border: none;
+}
 
 caption{
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 table {
-    border: 2px solid #00b290;
     letter-spacing: 1px;
-    font-size: 0.8rem;
-    width: 100%;
+    font-size: 1rem;
+    min-width: 200px;
     table-layout: fixed;
     color: #ffeed1;
+    margin-top: 1rem;
 }
 
 td,th {
@@ -331,26 +328,19 @@ td {
     text-align: center;
 }
 
-dl{
-    margin: 20px 0;
-}
-
 dt{
-    margin: 20px 0;
     font-weight: 600;
 }
-
-dd{
-    margin-left: 40px;
-    max-width: 20rem;
-}
-
 
 #harold-picture{
     object-fit: cover;
     min-height: 30rem;
     max-width: 20rem;
     border: 1px solid #00b290;
+}
+
+.sign-up input:focus, input[type="email"]:focus{
+    background-color: #ffeed1;
 }
 
 @media only screen and (max-width: 768px) {
@@ -430,6 +420,7 @@ dd{
 
     h2 {
         font-size: 30px;
+        text-align: center;
     }
 
     .center {
@@ -443,11 +434,25 @@ dd{
         align-items: center;
         gap: 1rem;
     }
+
+    dt, #about h2{
+        font-size: 1.5rem;
+        padding-bottom: 0;
+        border-bottom:2px solid #00b290;
+        margin-bottom: 0.7rem;
+        font-weight: 600;
+        letter-spacing: 0.2rem;
+    }
     
     #harold-picture{
         object-fit: cover;
-        min-height: 10rem;
-        max-width: 15rem;
+        min-height: 5rem;
+        max-width: 10rem;
+    }
+
+    .intro .container{
+        height: 100%;
+        margin: 0;
     }
 }
 
@@ -482,6 +487,10 @@ dd{
         margin-bottom: 6px;
         align-self: center;
         max-width: 800px;
+    }
+
+    .sign-up{
+        min-width: 500px;
     }
     
 }
